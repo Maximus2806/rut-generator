@@ -42,9 +42,10 @@
       display: flex;
       gap: 10px;
     }
+    
     button {
       padding: 10px;
-      background: #007bff;
+      background: #4a90e2;
       color: white;
       border: none;
       border-radius: 5px;
@@ -52,7 +53,7 @@
       flex: 1;
     }
     button:hover {
-      background: #0056b3;
+      background: #3b7dc1;
     }
   </style>
 </head>
@@ -70,6 +71,7 @@
   </div>
 
   <script>
+    // --- RUT GENERATOR ---
     function generateRandomRUT() {
       const number = Math.floor(Math.random() * (25000000 - 1000000) + 1000000);
       const rut = number + '-' + calculateDV(number);
